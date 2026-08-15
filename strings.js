@@ -19,3 +19,12 @@ console.log(filename.startsWith("report")); // true
 console.log(filename.startsWith("draft")); // false
 console.log(filename.endsWith("pdf")); // true
 console.log(filename.endsWith("docx")); // false
+
+// Slice() and substring()
+let fullName = "Chris Damilola";
+console.log(fullName.slice(0, 5));
+console.log(fullName.slice(6));
+console.log(fullName.slice(-8));
+console.log(fullName.substring(0, 5));
+console.log(fullName.substring(6));
+console.log(fullName.substring(-5));
