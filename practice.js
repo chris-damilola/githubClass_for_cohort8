@@ -69,3 +69,33 @@ let budget = 5000;
 let itemPrice = 1200;
 itemAffordable = budget > itemPrice && budget > 0;
 console.log(itemAffordable);
+
+let scores = [80, 45, 92, 30];
+const HighScore = scores.filter((score) => {
+  return score > 50;
+});
+console.log(HighScore);
+
+function hisName(name) {
+  try {
+    if (!name) {
+      throw new Error("Name not found");
+    }
+    console.log("This is the name: " + name);
+  } catch (error) {
+    console.log("Failed: " + error.message);
+  }
+}
+hisName("Chris");
+hisName("");
+
+let employee = {
+  name: "chris",
+  age: 32,
+  city: "Lagos",
+  salary: 35000,
+};
+
+const { name, age, city, salary } = employee;
+console.log(name);
+console.log(employee.name);
