@@ -56,3 +56,4 @@ function registerStudent(name, age) {
 registerStudent("Chris", 30);
 registerStudent("", 22);
 registerStudent("Damilola", "12");
+
